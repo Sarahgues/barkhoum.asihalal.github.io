@@ -343,14 +343,6 @@ section {
 
 /* FOOTER */
 
-.block:nth-child(1) {}
-
-.block:nth-child(2) {}
-
-.block:nth-child(3) {}
-
-.block:nth-child(4) {}
-
 .nav-footer {
     text-align: center;
     background-color: rgba(14, 8, 1, 0.931);
@@ -368,23 +360,6 @@ section {
     list-style: none;
     color: whitesmoke;
 }
-
-
-/* /* 
-.nav-footer p,
-h3,
-span {
-    color: whitesmoke;
-}
-
-.nav-footer ul {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 50px;
-    padding: 0;
-}
-
-/*  */
 
 .block h3 {
     font-family: "Parisienne", cursive;
