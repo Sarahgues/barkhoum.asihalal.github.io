@@ -12,7 +12,7 @@
 }
 
 body {
-    background-color: #ebfce8;
+    background: linear-gradient( 90deg, rgba(202, 251, 200, 1) 5%, rgba(237, 252, 235, 1) 52%, rgba(202, 251, 200, 1) 95%);
 }
 
 p {
@@ -230,41 +230,43 @@ header .navbar li a:hover {
 /* Avantages */
 
 .contenu-qualite h2 {
-    font-size: 3rem;
-    text-align: center;
+    font-size: 2.3rem;
+    letter-spacing: 3px;
     padding: 0;
     margin: 0;
-    border-radius: 15px 15px 1px 1px;
+    text-align: center;
+    text-shadow: 2px 2px 2px greenyellow;
 }
 
 .contenu-qualite p {
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 10px;
+    text-align: justify;
     line-height: 25px;
+    margin: 0 35px;
 }
 
 .contenu-qualite h3 {
-    text-align: center;
-    font-size: 1.6rem;
-    padding: 10px;
-    line-height: 25px;
+    text-align: justify;
+    margin: 0 35px;
 }
 
 .avantages-element {
     position: relative;
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    width: 100%;
+    grid-template-columns: 25% 25% 25% 25% 25%;
     height: 300px;
-    margin: 20px;
+    margin: 10px;
+}
+
+.element-qualite p {
+    white-space: normal;
+    font-size: 0.9rem;
 }
 
 .element-qualite:nth-child(1) {
     background-color: #24bee5;
     width: 95%;
-    text-align: center;
     color: whitesmoke;
+    text-align: center;
 }
 
 .element-qualite:nth-child(2) {
@@ -296,12 +298,7 @@ header .navbar li a:hover {
 }
 
 .avantages-element .element-qualite i {
-    display: inline-block;
-    font-size: 32px;
-    height: 1em;
-    width: 1em;
-    text-align: center;
-    line-height: 5em;
+    line-height: 1.2em;
 }
 
 .fa-chevron-left {
