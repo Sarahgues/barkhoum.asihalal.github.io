@@ -143,9 +143,10 @@ header .navbar li a:hover {
 
 .text-chinese {
     letter-spacing: 10px;
-    font-size: 1.5rem;
+    font-size: 4rem;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    color: orangered;
+    color: rgba(255, 68, 0, 0.459);
+    text-align: center;
 }
 
 
@@ -154,7 +155,7 @@ header .navbar li a:hover {
 .banner {
     position: relative;
     background: url(../images/fond-de-site-gyoza-asihalal.jpg) no-repeat center/cover;
-    min-height: 100vh;
+    min-height: 20vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -336,8 +337,7 @@ section {
 }
 
 .contenu h3 {
-    font-weight: 400px;
-    background-color: black;
+    background-color: rgb(209, 253, 143);
 }
 
 
@@ -444,7 +444,7 @@ span {
     background-color: rgba(19, 7, 7, 0.205);
     text-align: justify;
     width: 80%;
-    padding: 10px;
+    padding: 10px 80px;
     line-height: 25px;
 }
 
@@ -455,6 +455,7 @@ span {
 
 .services .contenu .box img {
     position: relative;
+    align-items: center;
     border-radius: 50%;
     height: 200px;
     width: 200px;
@@ -465,7 +466,9 @@ span {
     color: seashell;
     font-weight: 400;
     text-align: center;
-    padding: 0;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 20%;
 }
 
 .services h2 {
