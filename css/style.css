@@ -226,12 +226,6 @@ header .navbar li a:hover {
     letter-spacing: 4px;
 }
 
-.text-chinese {
-    background-image: url() no-repeat center/cover;
-    width: 100%;
-    position: absolute;
-}
-
 
 /* production */
 
