@@ -1,39 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sawarabi+Gothic&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap");
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
-    scroll-behavior: smooth;
-}
-
-body {
-    background: linear-gradient( 90deg, rgba(202, 251, 200, 1) 5%, rgba(237, 252, 235, 1) 52%, rgba(202, 251, 200, 1) 95%);
-}
-
-p {
-    font-size: 1rem;
-    font-weight: 300;
-}
-
-header {
-    position: fixed;
-    background-color: rgba(14, 8, 1, 0.849);
-    width: 100%;
-    z-index: 1;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.109);
-    transition: 0.5s;
-}
-
-
-/* parametre pour le logo font.logo {
+    @import url("https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,700&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sawarabi+Gothic&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Almarai:wght@700&display=swap");
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+    }
+    
+    body {
+        background: linear-gradient( 90deg, rgba(202, 251, 200, 1) 5%, rgba(237, 252, 235, 1) 52%, rgba(202, 251, 200, 1) 95%);
+    }
+    
+    p {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    
+    header {
+        position: fixed;
+        background-color: rgba(14, 8, 1, 0.849);
+        width: 100%;
+        z-index: 1;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.109);
+        transition: 0.5s;
+    }
+    /* parametre pour le logo font.logo {
     color: greenyellow;
     font-family: "Sawarabi Gothic", sans-serif;
     font-weight: bold;
@@ -44,562 +42,576 @@ header {
 
 
 } */
-
-.navbar {
-    display: flex;
-    position: relative;
-}
-
-.navbar li {
-    list-style: none;
-}
-
-.navbar a {
-    color: whitesmoke;
-    text-decoration: none;
-    margin-left: 30px;
-    font-weight: 700;
-}
-
-.btn-devis {
-    padding: 10px 20px;
-    background: orangered;
-    margin-top: -10px;
-    text-transform: uppercase;
-}
-
-.btn-devis:hover {
-    padding: 10px 20px;
-    transition: ease-in-out;
-}
-
-header .navbar li a:hover {
-    color: greenyellow;
-    padding-top: 20px;
-    border-top: solid 2px;
-}
-
-
-/************* reseaux sociaux***********/
-
-.reseaux-sociaux {
-    position: fixed;
-    left: -65px;
-    top: 60px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    transform: translate(-190px, 0);
-}
-
-.reseaux-sociaux a {
-    color: #fff;
-    background: rgba(0, 0, 0, 0.753);
-    font-size: 20px;
-    font-weight: 600;
-    text-decoration: none;
-    display: block;
-    margin: 2px;
-    padding: 15px;
-    width: 300px;
-    text-align: right;
-    border-radius: 50px;
-    transition: 1s;
-    transition-property: transform;
-}
-
-.reseaux-sociaux a:hover {
-    transform: translate(140px, 0);
-}
-
-.reseaux-sociaux i {
-    margin-left: 10px;
-    font-size: 30px;
-    width: 30px;
-    height: 30px;
-}
-
-.reseaux-sociaux a:nth-child(1) i {
-    color: #1da0f0;
-}
-
-.reseaux-sociaux a:nth-child(2) i {
-    color: #f80000;
-}
-
-.reseaux-sociaux a:nth-child(3) i {
-    color: transparent;
-    background-image: linear-gradient(45deg, #ffdf9e, #e56969, #8a49a1);
-    font-weight: 600;
-}
-
-.reseaux-sociaux a:nth-child(4) i {
-    color: #4ecce8;
-}
-
-
-/* textes en arabe et en chinois */
-
-.text-chinese {
-    letter-spacing: 10px;
-    font-size: 4rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    color: rgba(255, 68, 0, 0.459);
-    text-align: center;
-}
-
-
-/*****************banner***************/
-
-.banner {
-    position: relative;
-    background: url(../images/fond-de-site-gyoza-asihalal.jpg) no-repeat center/cover;
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.contenu-banner {
-    max-width: 60%;
-    padding-bottom: 10px;
-    text-align: center;
-    color: whitesmoke;
-    max-width: 50%;
-    text-align: center;
-    border-radius: 15px;
-    background: rgb(0 0 0 /39%);
-    box-shadow: 19px 19px 20px 19px rgb(0 0 0 /39%);
-}
-
-.contenu-banner span {
-    background-color: #adff2f;
-    color: orangered;
-    margin: 1px;
-    padding: 0 6px 0 0;
-    border-radius: 12px 0 12px 0;
-}
-
-.contenu-banner h1 {
-    color: whitesmoke;
-    font-size: 3em;
-    margin-bottom: 15px;
-    text-transform: capitalize;
-}
-
-.contenu p {
-    color: whitesmoke;
-    font-size: 1.2em;
-}
-
-.btn-1 {
-    font-size: 1rem;
-    color: whitesmoke;
-    background-color: orangered;
-    padding: 10px 20px;
-    display: inline-block;
-    margin-top: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    transition: 0.5s;
-    margin-left: 10px;
-}
-
-.btn-2 {
-    font-size: 1rem;
-    color: black;
-    background-color: greenyellow;
-    padding: 10px 20px;
-    display: inline-block;
-    margin-top: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    transition: 0.5s;
-    margin-left: 10px;
-}
-
-.btn-1:hover {
-    letter-spacing: 4px;
-}
-
-
-/* Avantages */
-
-.contenu-qualite h2 {
-    font-size: 2.3rem;
-    letter-spacing: 3px;
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    text-shadow: 2px 2px 2px greenyellow;
-}
-
-.contenu-qualite p {
-    text-align: justify;
-    line-height: 25px;
-    margin: 0 35px;
-}
-
-.contenu-qualite h3 {
-    text-align: justify;
-    margin: 0 35px;
-}
-
-.avantages-element {
-    position: relative;
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25% 25%;
-    height: 300px;
-    margin: 10px;
-}
-
-.element-qualite p {
-    white-space: normal;
-    font-size: 0.9rem;
-}
-
-.element-qualite:nth-child(1) {
-    background: rgba(36, 190, 229, 1);
-    width: 95%;
-    color: whitesmoke;
-    text-align: center;
-}
-
-.element-qualite:nth-child(2) {
-    background: rgb(45, 195, 170);
-    width: 95%;
-    text-align: center;
-    color: whitesmoke;
-}
-
-.element-qualite:nth-child(3) {
-    background-color: rgb(250, 145, 7);
-    width: 95%;
-    text-align: center;
-    color: whitesmoke;
-}
-
-.element-qualite:nth-child(4) {
-    background-color: rgb(189, 224, 30);
-    width: 95%;
-    text-align: center;
-    color: whitesmoke;
-}
-
-.element-qualite:nth-child(5) {
-    background-color: rgb(250, 93, 8);
-    width: 95%;
-    text-align: center;
-    color: whitesmoke;
-}
-
-.avantages-element .element-qualite i {
-    line-height: 1.2em;
-}
-
-.fa-chevron-left {
-    position: absolute;
-    left: -10px;
-}
-
-.fa-chevron-right {
-    position: absolute;
-    right: 10px;
-}
-
-.icon-qualite h2 {
-    font-size: 3rem;
-    color: orangered;
-    text-align: center;
-}
-
-.fa-map-marker {
-    color: whitesmoke;
-}
-
-
-/* production */
-
-.block img {
-    margin-top: 25px;
-}
-
-section {
-    padding: 100px;
-}
-
-.row {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.row .col50 {
-    position: relative;
-    width: 48%;
-    justify-content: center;
-    align-items: center;
-}
-
-.production p {
-    text-align: justify;
-    padding: 10px;
-    line-height: 25px;
-}
-
-.title-text {
-    color: #000;
-    font-size: 2.3rem;
-    font-weight: 300px;
-    margin-bottom: 30px;
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-}
-
-.title-text span {
-    color: orangered;
-    font-size: 2.6rem;
-    font-weight: 700px;
-}
-
-.row .col50 img {
-    height: 450px;
-    width: 450px;
-    position: relative;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.288);
-}
-
-
-/* page produits */
-
-.title {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.gamme {
-    margin-top: -100px;
-}
-
-.gamme .contenu {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 40px;
-}
-
-.gamme .contenu .box {
-    width: 300px;
-    margin: 20px;
-    border: 20px solid #fff;
-    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
-}
-
-.gamme .contenu .box .imbox {
-    width: 100%;
-    height: 300px;
-    position: relative;
-}
-
-.gamme .contenu .box .imbox img {
-    width: 100%;
-    height: 300px;
-    position: relative;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-}
-
-.gamme .contenu .box .text {
-    text-align: center;
-    font-weight: 300px;
-    color: black;
-}
-
-.contenu h3 {
-    background-color: rgb(209, 253, 143);
-}
-
-
-/* FOOTER */
-
-.nav-footer {
-    text-align: center;
-    background-color: orangered;
-}
-
-.element {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    text-decoration: none;
-    margin-left: 30px;
-    font-weight: 700;
-}
-
-.nav-footer li {
-    list-style: none;
-    color: whitesmoke;
-}
-
-.block h3 {
-    font-family: "Parisienne", cursive;
-    font-weight: 700;
-    font-size: 4rem;
-    text-shadow: -4px -2px 19px;
-}
-
-.nav-footer a {
-    color: rgb(22, 13, 1);
-    text-decoration: none;
-    color: whitesmoke;
-    margin-left: 30px;
-    font-weight: 700;
-}
-
-.nav-footer i {
-    padding: 10px;
-    color: whitesmoke;
-    display: block;
-    font-size: 2rem;
-}
-
-.author {
-    text-align: center;
-    background-color: orangered;
-    color: white;
-    list-style: none;
-}
-
-.author a {
-    text-decoration: none;
-    color: white;
-}
-
-
-/* services */
-
-.services {
-    margin-top: -100px;
-    background-color: greenyellow;
-    background: url() no-repeat center/cover;
-}
-
-.services .contenu {
-    background-color: rgba(19, 7, 7, 0.205);
-    text-align: center;
-    color: black;
-    border-radius: 1px 1px 15px 15px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 10%;
-    padding: 10px;
-}
-
-.services .title p {
-    background-color: rgba(19, 7, 7, 0.205);
-    text-align: justify;
-    width: 80%;
-    padding: 10px 80px;
-    line-height: 25px;
-}
-
-.services .contenu .box {
-    width: 220px;
-    margin: 25px auto;
-}
-
-.services .contenu .box img {
-    position: relative;
-    align-items: center;
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-}
-
-.services .contenu .box h3 {
-    background-color: rgba(19, 7, 7, 0.205);
-    color: seashell;
-    font-weight: 400;
-    text-align: center;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 20%;
-}
-
-.services h2 {
-    width: 80%;
-    background-color: rgba(19, 7, 7, 0.281);
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    border-radius: 15px 15px 1px 1px;
-}
-
-
-/* page de contact */
-
-.contact {
-    background: url(/images/modele-vecteur-fines-herbes-feuille-menthe.jpg) no-repeat center/cover;
-    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
-    width: 100%;
-    background-position: unset;
-}
-
-.formulaire-contact {
-    padding: 75px 50px;
-    background: whitesmoke;
-    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
-    max-width: 500px;
-    margin-top: 50px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 38%;
-}
-
-.formulaire-contact .boite {
-    position: relative;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.formulaire-contact h3 {
-    color: #111;
-    font-size: 1.2em;
-    margin-bottom: 20px;
-}
-
-.formulaire-contact .boite input,
-.formulaire-contact .boite textarea {
-    width: 100%;
-    border: 1px solid #555;
-    padding: 10px;
-    color: #111;
-    outline: none;
-    font-size: 16px;
-    font-weight: 300;
-    resize: none;
-}
-
-.formulaire-contact .boite input[type="submit"] {
-    font-size: 1em;
-    font-weight: 700;
-    color: #ffff;
-    background: orangered;
-    display: inline-block;
-    cursor: pointer;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: 2px;
-    outline: none;
-    border: none;
-    max-width: 120px;
-}
+    
+    .navbar {
+        display: flex;
+        position: relative;
+    }
+    
+    .navbar li {
+        list-style: none;
+    }
+    
+    .navbar a {
+        color: whitesmoke;
+        text-decoration: none;
+        margin-left: 30px;
+        font-weight: 700;
+    }
+    
+    .btn-devis {
+        padding: 10px 20px;
+        background: orangered;
+        margin-top: -10px;
+        text-transform: uppercase;
+    }
+    
+    .btn-devis:hover {
+        padding: 10px 20px;
+        transition: ease-in-out;
+    }
+    
+    header .navbar li a:hover {
+        color: greenyellow;
+        padding-top: 20px;
+        border-top: solid 2px;
+    }
+    /************* reseaux sociaux***********/
+    
+    .reseaux-sociaux {
+        position: fixed;
+        left: -65px;
+        top: 60px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transform: translate(-190px, 0);
+    }
+    
+    .reseaux-sociaux a {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.753);
+        font-size: 20px;
+        font-weight: 600;
+        text-decoration: none;
+        display: block;
+        margin: 2px;
+        padding: 15px;
+        width: 300px;
+        text-align: right;
+        border-radius: 50px;
+        transition: 1s;
+        transition-property: transform;
+    }
+    
+    .reseaux-sociaux a:hover {
+        transform: translate(140px, 0);
+    }
+    
+    .reseaux-sociaux i {
+        margin-left: 10px;
+        font-size: 30px;
+        width: 30px;
+        height: 30px;
+    }
+    
+    .reseaux-sociaux a:nth-child(1) i {
+        color: #1da0f0;
+    }
+    
+    .reseaux-sociaux a:nth-child(2) i {
+        color: #f80000;
+    }
+    
+    .reseaux-sociaux a:nth-child(3) i {
+        color: transparent;
+        background-image: linear-gradient(45deg, #ffdf9e, #e56969, #8a49a1);
+        font-weight: 600;
+    }
+    
+    .reseaux-sociaux a:nth-child(4) i {
+        color: #4ecce8;
+    }
+    /* textes en arabe et en chinois */
+    
+    .text-chinese {
+        letter-spacing: 10px;
+        font-size: 4rem;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        color: rgba(255, 68, 0, 0.459);
+        text-align: center;
+    }
+    /*****************banner***************/
+    
+    .banner {
+        position: relative;
+        background: url(../images/fond-de-site-gyoza-asihalal.jpg) no-repeat center/cover;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .contenu-banner {
+        max-width: 60%;
+        padding-bottom: 10px;
+        text-align: center;
+        color: whitesmoke;
+        max-width: 50%;
+        text-align: center;
+        border-radius: 15px;
+        background: rgb(0 0 0 /39%);
+        box-shadow: 19px 19px 20px 19px rgb(0 0 0 /39%);
+    }
+    
+    .contenu-banner span {
+        background-color: #adff2f;
+        color: orangered;
+        margin: 1px;
+        padding: 0 6px 0 0;
+        border-radius: 12px 0 12px 0;
+    }
+    
+    .contenu-banner h1 {
+        color: whitesmoke;
+        font-size: 3em;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+    }
+    
+    .contenu p {
+        color: whitesmoke;
+        font-size: 1.2em;
+    }
+    
+    .btn-1 {
+        font-size: 1rem;
+        color: whitesmoke;
+        background-color: orangered;
+        padding: 10px 20px;
+        display: inline-block;
+        margin-top: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        transition: 0.5s;
+        margin-left: 10px;
+    }
+    
+    .btn-2 {
+        font-size: 1rem;
+        color: black;
+        background-color: greenyellow;
+        padding: 10px 20px;
+        display: inline-block;
+        margin-top: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        transition: 0.5s;
+        margin-left: 10px;
+    }
+    
+    .btn-1:hover {
+        letter-spacing: 4px;
+    }
+    /* Avantages */
+    
+    .contenu-qualite h2 {
+        font-size: 2.3rem;
+        letter-spacing: 3px;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        text-shadow: 2px 2px 2px greenyellow;
+    }
+    
+    .contenu-qualite p {
+        text-align: justify;
+        line-height: 25px;
+        margin: 0 35px;
+    }
+    
+    .contenu-qualite h3 {
+        text-align: justify;
+        margin: 0 35px;
+    }
+    
+    .avantages-element {
+        position: relative;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25% 25%;
+        height: 300px;
+        margin: 10px;
+    }
+    
+    .element-qualite p {
+        white-space: normal;
+        font-size: 0.9rem;
+    }
+    
+    .element-qualite:nth-child(1) {
+        background: rgba(36, 190, 229, 1);
+        width: 95%;
+        color: whitesmoke;
+        text-align: center;
+    }
+    
+    .element-qualite:nth-child(2) {
+        background: rgb(45, 195, 170);
+        width: 95%;
+        text-align: center;
+        color: whitesmoke;
+    }
+    
+    .element-qualite:nth-child(3) {
+        background-color: rgb(250, 145, 7);
+        width: 95%;
+        text-align: center;
+        color: whitesmoke;
+    }
+    
+    .element-qualite:nth-child(4) {
+        background-color: rgb(189, 224, 30);
+        width: 95%;
+        text-align: center;
+        color: whitesmoke;
+    }
+    
+    .element-qualite:nth-child(5) {
+        background-color: rgb(250, 93, 8);
+        width: 95%;
+        text-align: center;
+        color: whitesmoke;
+    }
+    
+    .avantages-element .element-qualite i {
+        line-height: 1.2em;
+    }
+    
+    .fa-chevron-left {
+        position: absolute;
+        left: -10px;
+    }
+    
+    .fa-chevron-right {
+        position: absolute;
+        right: 10px;
+    }
+    
+    .icon-qualite h2 {
+        font-size: 3rem;
+        color: orangered;
+        text-align: center;
+    }
+    
+    .fa-map-marker {
+        color: whitesmoke;
+    }
+    /* production */
+    
+    .block img {
+        margin-top: 25px;
+    }
+    
+    section {
+        padding: 100px;
+    }
+    
+    .row {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .row .col50 {
+        position: relative;
+        width: 48%;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .production p {
+        text-align: justify;
+        padding: 10px;
+        line-height: 25px;
+    }
+    
+    .title-text {
+        color: #000;
+        font-size: 2.3rem;
+        font-weight: 300px;
+        margin-bottom: 30px;
+        width: 100%;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .title-text span {
+        color: orangered;
+        font-size: 2.6rem;
+        font-weight: 700px;
+    }
+    
+    .row .col50 img {
+        height: 450px;
+        width: 450px;
+        position: relative;
+        box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.288);
+    }
+    /* page produits */
+    
+    .title {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .gamme {
+        margin-top: -100px;
+    }
+    
+    .gamme .contenu {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+    
+    .gamme .contenu .box {
+        width: 300px;
+        margin: 20px;
+        border: 20px solid #fff;
+        box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+    }
+    
+    .gamme .contenu .box .imbox {
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+    
+    .gamme .contenu .box .imbox img {
+        width: 100%;
+        height: 300px;
+        position: relative;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        border-top: gradient(greenyellow, orangered);
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+    }
+    
+    .gamme .contenu .box .text {
+        text-align: center;
+        font-weight: 300px;
+        color: black;
+    }
+    
+    .contenu h3 {
+        background-color: rgb(209, 253, 143);
+    }
+    /* FOOTER */
+    
+    .nav-footer {
+        text-align: center;
+        background-color: orangered;
+    }
+    
+    .element {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        text-decoration: none;
+        margin-left: 30px;
+        font-weight: 700;
+    }
+    
+    .nav-footer li {
+        list-style: none;
+        color: whitesmoke;
+    }
+    
+    .block h3 {
+        font-family: "Parisienne", cursive;
+        font-weight: 700;
+        font-size: 4rem;
+        text-shadow: -4px -2px 19px;
+    }
+    
+    .nav-footer a {
+        color: rgb(22, 13, 1);
+        text-decoration: none;
+        color: whitesmoke;
+        margin-left: 30px;
+        font-weight: 700;
+    }
+    
+    .nav-footer i {
+        padding: 10px;
+        color: whitesmoke;
+        display: block;
+        font-size: 2rem;
+    }
+    
+    .author {
+        text-align: center;
+        background-color: orangered;
+        color: white;
+        list-style: none;
+    }
+    
+    .author a {
+        text-decoration: none;
+        color: white;
+    }
+    /* services */
+    
+    .services {
+        margin-top: -100px;
+        background-color: greenyellow;
+        background: url() no-repeat center/cover;
+    }
+    
+    .services .contenu {
+        background-color: rgba(19, 7, 7, 0.205);
+        text-align: center;
+        color: black;
+        border-radius: 1px 1px 15px 15px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 10%;
+        padding: 10px;
+    }
+    
+    .services .title p {
+        background-color: rgba(19, 7, 7, 0.205);
+        text-align: justify;
+        width: 80%;
+        padding: 10px 80px;
+        line-height: 25px;
+    }
+    
+    .services .contenu .box {
+        width: 220px;
+        margin: 25px auto;
+    }
+    
+    .services .contenu .box img {
+        position: relative;
+        align-items: center;
+        border-radius: 50%;
+        height: 200px;
+        width: 200px;
+    }
+    
+    .services .contenu .box h3 {
+        background-color: rgba(19, 7, 7, 0.205);
+        color: seashell;
+        font-weight: 400;
+        text-align: center;
+        padding: 5px;
+        margin: 10px;
+        border-radius: 20%;
+    }
+    
+    .services h2 {
+        width: 80%;
+        background-color: rgba(19, 7, 7, 0.281);
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        border-radius: 15px 15px 1px 1px;
+    }
+    /* page de contact */
+    
+    .contact {
+        background: url(/images/modele-vecteur-fines-herbes-feuille-menthe.jpg) no-repeat center/cover;
+        width: 100%;
+        margin: 0;
+        box-shadow: 5px 5px 15px 5px rgba(129, 197, 20, 0.8);
+    }
+    
+    .grid-contact {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+    }
+    
+    .first-block,
+    .second-block {
+        grid-column: 50%;
+    }
+    
+    .formulaire-contact,
+    .first-block {
+        padding: 50px;
+        background: whitesmoke;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .formulaire-contact .boite {
+        position: relative;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .intro-contact h2 {
+        font-size: 2.3rem;
+        letter-spacing: 3px;
+    }
+    
+    .intro-contact {
+        padding: 30px;
+        border-top: solid 15px red;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        text-align: center;
+        background: whitesmoke;
+    }
+    
+    .intro-contact span {
+        color: orangered;
+        font-size: 2.5rem;
+    }
+    
+    .formulaire-contact h3 {
+        color: #111;
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+    
+    .formulaire-contact .boite input,
+    .formulaire-contact .boite textarea {
+        width: 100%;
+        border: 1px solid #555;
+        padding: 10px;
+        color: #111;
+        outline: none;
+        font-size: 16px;
+        font-weight: 300;
+        resize: none;
+    }
+    
+    .formulaire-contact .boite input[type="submit"] {
+        font-size: 1em;
+        font-weight: 700;
+        color: #ffff;
+        background: orangered;
+        display: inline-block;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 2px;
+        outline: none;
+        border: none;
+        max-width: 300px;
+        transition: 0.5;
+        align-items: center;
+        justify-content: center;
+    }
