@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Sawarabi+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Sawarabi+Gothic&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
@@ -362,6 +362,13 @@ section {
     font-weight: bold;
 }
 
+.title h3 {
+    width: 80%;
+    border-color: linear-gradient( rgba(255, 0, 0, 0.9) 14%, rgba(63, 255, 97, 0.9), rgba(236, 26, 0, 0.9)) solid 10px;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+}
+
 .title-text span {
     color: orangered;
     font-size: 2.6rem;
@@ -417,8 +424,7 @@ section {
     top: 0;
     left: 0;
     object-fit: cover;
-    border-top: gradient(greenyellow, orangered);
-    border-top-left-radius: 50%;
+    border-top-color: #f80000;
     border-top-right-radius: 50%;
 }
 
@@ -635,3 +641,66 @@ section {
     align-items: center;
     justify-content: center;
 }
+
+
+/* parametres petits écrans*/
+
+@media (max-width: 640px) {
+    section {
+        padding: 100px auto;
+    }
+    .logo img {
+        width: 50px;
+        height: 30px;
+        margin-top: 3px;
+    }
+    .navbar {
+        display: none;
+    }
+    .banner {
+        background-image: none;
+        width: 350px;
+    }
+    .contenu-banner h1 {
+        color: whitesmoke;
+        font-size: 2em;
+        width: 350px;
+        margin-bottom: 15px;
+        text-transform: capitalize;
+    }
+    .avantages-element {
+        grid-template-rows: 1/1;
+    }
+    .avantages-element {
+        position: relative;
+        display: grid;
+        grid-template-rows: 6, 1fr;
+    }
+    .row .col50 {
+        position: relative;
+        width: 350px;
+    }
+    .row .col50 img {
+        display: none;
+    }
+    .production p {
+        text-align: justify;
+        padding: 10px;
+        line-height: 25px;
+        width: 350px;
+        height: 200px;
+    }
+    .grid-contact {
+        grid-template-rows: 1fr;
+        display: grid;
+    }
+    .first-block {
+        grid-row: 1/2;
+    }
+    .second-block {
+        grid-row: 2/2;
+    }
+    .element {
+        display: grid;
+        grid-template-columns: 100%;
+    }
